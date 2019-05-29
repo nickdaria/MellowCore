@@ -1,0 +1,6 @@
+D:\GitHub\MellowCore\MellowCore\MellowCore\bin\Debug\MellowCore.dll
+D:\GitHub\MellowCore\MellowCore\MellowCore\bin\Debug\MellowCore.pdb
+D:\GitHub\MellowCore\MellowCore\MellowCore\obj\Debug\MellowCore.csprojAssemblyReference.cache
+D:\GitHub\MellowCore\MellowCore\MellowCore\obj\Debug\MellowCore.csproj.CoreCompileInputs.cache
+D:\GitHub\MellowCore\MellowCore\MellowCore\obj\Debug\MellowCore.dll
+D:\GitHub\MellowCore\MellowCore\MellowCore\obj\Debug\MellowCore.pdb

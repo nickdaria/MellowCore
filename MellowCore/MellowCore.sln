@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MellowCore", "MellowCore\MellowCore.csproj", "{AAC920C7-B789-4074-A4BE-09E596D409E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MellowCoreTest", "MellowCoreTest\MellowCoreTest.csproj", "{407382BE-C8F1-44F3-A147-A7789A50E132}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAC920C7-B789-4074-A4BE-09E596D409E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC920C7-B789-4074-A4BE-09E596D409E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC920C7-B789-4074-A4BE-09E596D409E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC920C7-B789-4074-A4BE-09E596D409E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407382BE-C8F1-44F3-A147-A7789A50E132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407382BE-C8F1-44F3-A147-A7789A50E132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407382BE-C8F1-44F3-A147-A7789A50E132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407382BE-C8F1-44F3-A147-A7789A50E132}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBE2D5A8-399C-4C07-B2AA-DD03B54317CF}
+	EndGlobalSection
+EndGlobal
