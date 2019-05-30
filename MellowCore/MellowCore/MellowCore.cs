@@ -11,7 +11,7 @@ using Microsoft.Win32;
 
 namespace MellowCore
 {
-    public class Core
+    public class MellowCoreTools
     {
         public static string GetMellowCoreVersion()
         {
