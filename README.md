@@ -1,4 +1,5 @@
-# MellowCore
+![MellowCore](Branding/Logo.png)
+
 [![Build Status](https://travis-ci.com/nickdaria/MellowCore.svg?branch=master)](https://travis-ci.com/nickdaria/MellowCore)
 
 MellowCore is an easy to use .NET Framework class library that contains commonly used functions and helps streamline .NET development.
@@ -12,5 +13,5 @@ MellowCore is an easy to use .NET Framework class library that contains commonly
 
 ### Installation
 
-  - Install the NuGet Package: **NUGET_URL_HERE**
+  - Install the NuGet Package: [https://www.nuget.org/packages/MellowCore/]
   - Download the latest build and add it to your solution, then reference it in your program.
