@@ -1,4 +1,4 @@
 language: csharp
+before_script: cd MellowCore
 script:
-    - cd /nickdaria/MellowCore/MellowCore
     - msbuild MellowCore.sln
