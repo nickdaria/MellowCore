@@ -1,6 +1,0 @@
-language: csharp
-addons:
-  artifacts: true
-before_script: cd MellowCore
-script:
-    - msbuild MellowCore.sln

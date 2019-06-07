@@ -37,15 +37,10 @@ namespace MellowCore
         }
     }
 
-    public class FileInteraction
-    {
-        
-    }
-
     public class RegistryInteraction
     {
         //  Initialize Registry Object At Current User/Software/AppName
-        public static RegistryKey rk = Registry.CurrentUser.CreateSubKey(@"Software\" + Core.GetCallingExecutableName());
+        public static RegistryKey rk = Registry.CurrentUser.CreateSubKey(@"Software\" + MellowCore.MellowCoreTools.GetCallingExecutableName());
 
         //  Retrieve RegistryKey value for application to use
         public static RegistryKey GetRegistryKeyObject()
@@ -124,7 +119,7 @@ namespace MellowCore
             else if (URL is Uri) { WebLocation = new System.Uri(URL); }
             else { return null; }
 
-            //  Create WebClient and begin download. Does not use Async 
+            //  Create WebClient and begin download. Does not use Async thread
             using (var webClient = new System.Net.WebClient())
             {
                 return webClient.DownloadString(WebLocation).ToString();

@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MellowCore")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Simple class library for common functions such as type conversions, file/string downloads, registry interactions, and more")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Nick Daria")]
 [assembly: AssemblyProduct("MellowCore")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
