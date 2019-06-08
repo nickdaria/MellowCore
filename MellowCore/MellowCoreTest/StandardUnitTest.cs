@@ -11,7 +11,7 @@ namespace MellowCoreTest
         public void GetCallingExecutableName()
         {
             string Expected = "MellowCoreTest";
-            var Result = MellowCore.Core.GetCallingExecutableName();
+            var Result = MellowCore.MellowCoreTools.GetCallingExecutableName();
             Assert.AreEqual(Expected, Result);
         }
 

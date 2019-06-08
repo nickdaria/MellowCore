@@ -44,9 +44,9 @@
     <Compile Include="MellowCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="NuGet\MellowCore.0.1.0.nupkg" />
-    <None Include="NuGet\MellowCore.0.1.0.nuspec" />
+    <None Include="MellowCore.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

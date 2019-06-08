@@ -37,6 +37,20 @@ namespace MellowCore
         }
     }
 
+    public class WindowsInterface
+    {
+        //  Get Username
+        public static string GetWindowsUserName()
+        {
+            return WindowsIdentity.GetCurrent().Name;
+        }
+
+        public static string GetPCName()
+        {
+            return Environment.MachineName;
+        }
+    }
+
     public class RegistryInteraction
     {
         //  Initialize Registry Object At Current User/Software/AppName
@@ -93,6 +107,17 @@ namespace MellowCore
 
     public class WebInterface
     {
+        //  Get local IP address
+        public static string GetHostname()
+        {
+            return Dns.GetHostName();
+        }
+
+        public static string GetLocalIP()
+        {
+            return Dns.GetHostEntry(MellowCore.WebInterface.GetHostname()).AddressList[0].ToString();
+        }
+
         //  Async File Download Function that accepts String or Uri input; returns null if input is incorrect
         public static WebClient DownloadFile(dynamic URL, string DownloadLocation)
         {
