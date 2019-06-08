@@ -17,6 +17,6 @@
     <tags>Common, Core</tags>
   </metadata>
   <files>
-    <file src="lib\MellowCore.dll" target="lib\MellowCore.dll" />
+    <file src="\MellowCore\bin\Release\MellowCore.dll" target="\MellowCore\bin\Release\MellowCore.dll" />
   </files>
 </package>
