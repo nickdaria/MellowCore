@@ -7,38 +7,62 @@ using Microsoft.Win32;
 
 namespace MellowCore.Windows
 {
+    /// <summary>
+    /// Interaction with the Windows Registry Key
+    /// </summary>
     public class Registry
     {
-        //  Initialize Registry Object At Current User/Software/AppName
-        public static RegistryKey rk = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\" + MellowCore.MellowCoreTools.GetCallingExecutableName());
+        /// <summary>
+        /// Initialize Registry Key at Current User/Software/AppName
+        /// </summary>
+        public static RegistryKey rk = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\" + MellowCore.Windows.CurrentProcess.GetCallingExecutableName());
 
-        //  Retrieve RegistryKey value for application to use
+        /// <summary>
+        /// Returns RegistryKey object at app location for further use
+        /// </summary>
+        /// <returns>RegistryKey object</returns>
         public static RegistryKey GetRegistryKeyObject()
         {
             return rk;
         }
 
-        //  Quickly get path to application registry as a string
+        /// <summary>
+        /// Quickly get path to application registry as a string
+        /// </summary>
+        /// <returns>Path as string</returns>
         public static string GetRegistryPath()
         {
             return rk.ToString();
         }
 
-        //  Retrieve Registry Value, Returns null if Object does not exist
+        /// <summary>
+        /// Fetch registry value from application registry key
+        /// </summary>
+        /// <param name="KeyName">Key name as string to fetch</param>
+        /// <returns>Dynamic value of registry object, null if nonexistent</returns>
         public static dynamic GetRegistryValue(string KeyName)
         {
             try { return rk.GetValue(KeyName); }
             catch (Exception e) { return e; }
         }
 
-        //  Set Registry Value
+        /// <summary>
+        /// Set registry value from application registry key
+        /// </summary>
+        /// <param name="KeyName">Key name as string to set</param>
+        /// <param name="KeyValue">Value to assign to key</param>
+        /// <returns>Dynamic value of registry object, null if unable to modify</returns>
         public static dynamic SetRegistryValue(string KeyName, dynamic KeyValue)
         {
             try { return rk.SetValue(KeyName, KeyValue); }
             catch (Exception e) { return e; }
         }
 
-        //  Delete Registry Value, Returns true if successful, error if unsuccessful
+        /// <summary>
+        /// Delete registry value from application registry key
+        /// </summary>
+        /// <param name="KeyName">Key name as string to delete</param>
+        /// <returns>True if successful, error if failed</returns>
         public static dynamic DeleteRegistryValue(string KeyName)
         {
             try
