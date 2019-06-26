@@ -29,6 +29,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\MellowCore.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -41,10 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversions\StringConversions.cs" />
+    <Compile Include="Disk\DiskManagement.cs" />
     <Compile Include="MellowCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\Adapter.cs" />
+    <Compile Include="Web\WebInterface.cs" />
+    <Compile Include="Windows\CurrentProcess.cs" />
+    <Compile Include="Windows\Registry.cs" />
+    <Compile Include="Windows\WinInterface.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="MellowCore.nuspec" />
   </ItemGroup>
