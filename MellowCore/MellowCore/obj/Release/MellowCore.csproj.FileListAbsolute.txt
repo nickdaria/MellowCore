@@ -4,3 +4,4 @@ D:\GitHub\MellowCore\MellowCore\MellowCore\bin\Release\MellowCore.pdb
 D:\GitHub\MellowCore\MellowCore\MellowCore\obj\Release\MellowCore.csproj.CoreCompileInputs.cache
 D:\GitHub\MellowCore\MellowCore\MellowCore\obj\Release\MellowCore.dll
 D:\GitHub\MellowCore\MellowCore\MellowCore\obj\Release\MellowCore.pdb
+D:\GitHub\MellowCore\MellowCore\MellowCore\obj\Release\MellowCore.csprojAssemblyReference.cache
