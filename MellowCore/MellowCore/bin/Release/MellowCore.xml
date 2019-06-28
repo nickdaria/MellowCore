@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MellowCore</name>
+    </assembly>
+    <members>
+        <member name="T:MellowCore.Conversions.StringConversions">
+            <summary>
+            Functions to convert strings
+            </summary>
+        </member>
+        <member name="M:MellowCore.Conversions.StringConversions.ToURI(System.String)">
+            <summary>
+            Converts a URL string to a URI object
+            </summary>
+            <param name="Url">String of the URL to convert</param>
+            <returns>URI Object</returns>
+        </member>
+        <member name="T:MellowCore.Disk.DiskManagement">
+            <summary>
+            Disk and drive management functions
+            </summary>
+        </member>
+        <member name="M:MellowCore.Disk.DiskManagement.GetDrivesAsFormattedStrings">
+            <summary>
+            Converts DriveInfo to readable string for listings
+            </summary>
+            <returns>List of type string containing readable partition info</returns>
+        </member>
+        <member name="M:MellowCore.Disk.DiskManagement.GetDriveInfoAsList">
+            <summary>
+            Converts DriveInfo array to DriveInfo list for application use
+            </summary>
+            <returns>List of type DriveInfo</returns>
+        </member>
+        <member name="T:MellowCore.Library.Versioning">
+            <summary>
+            MellowCore Library version information and update checking
+            </summary>
+        </member>
+        <member name="M:MellowCore.Library.Versioning.GetMellowCoreVersion">
+            <summary>
+            Fetches the current running version of MellowCore
+            </summary>
+            <returns>MellowCore Version as string</returns>
+        </member>
+        <member name="T:MellowCore.Web.Adapter">
+            <summary>
+            Network adapter functions and info
+            </summary>
+        </member>
+        <member name="M:MellowCore.Web.Adapter.GetHostname">
+            <summary>
+            Fetches adapter hostname
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MellowCore.Web.Adapter.GetLocalIP">
+            <summary>
+            Gets the local IP address from the default adapter
+            </summary>
+            <returns>IP Address as string</returns>
+        </member>
+        <member name="T:MellowCore.Web.WebInterface">
+            <summary>
+            Collections of functions to fetch files and strings from the internet
+            </summary>
+        </member>
+        <member name="M:MellowCore.Web.WebInterface.DownloadFile(System.Object,System.String)">
+            <summary>
+            Async File Download Function that accepts String or Uri input; returns null if input is incorrect
+            </summary>
+            <param name="URL">URL to file to download</param>
+            <param name="DownloadLocation">Path to save download to when complete</param>
+            <returns>Returns WebClient object once download is started for tracking progress and attaching events</returns>
+        </member>
+        <member name="M:MellowCore.Web.WebInterface.DownloadString(System.Object)">
+            <summary>
+            Fetches string from the web. Not asyncronous
+            </summary>
+            <param name="URL">URL to fetch string from</param>
+            <returns>String fetched</returns>
+        </member>
+        <member name="T:MellowCore.Windows.CurrentProcess">
+            <summary>
+            Functions involving the application's host process
+            </summary>
+        </member>
+        <member name="M:MellowCore.Windows.CurrentProcess.IsAdmin">
+            <summary>
+            Checks if the executing user is an Admin
+            </summary>
+            <returns>Boolean. True = Admin</returns>
+        </member>
+        <member name="M:MellowCore.Windows.CurrentProcess.GetCallingExecutableName">
+            <summary>
+            Gets the name of the application running MellowCore
+            </summary>
+            <returns>Application Name as string</returns>
+        </member>
+        <member name="T:MellowCore.Windows.Registry">
+            <summary>
+            Interaction with the Windows Registry Key
+            </summary>
+        </member>
+        <member name="F:MellowCore.Windows.Registry.rk">
+            <summary>
+            Initialize Registry Key at Current User/Software/AppName
+            </summary>
+        </member>
+        <member name="M:MellowCore.Windows.Registry.GetRegistryKeyObject">
+            <summary>
+            Returns RegistryKey object at app location for further use
+            </summary>
+            <returns>RegistryKey object</returns>
+        </member>
+        <member name="M:MellowCore.Windows.Registry.GetRegistryPath">
+            <summary>
+            Quickly get path to application registry as a string
+            </summary>
+            <returns>Path as string</returns>
+        </member>
+        <member name="M:MellowCore.Windows.Registry.GetRegistryValue(System.String)">
+            <summary>
+            Fetch registry value from application registry key
+            </summary>
+            <param name="KeyName">Key name as string to fetch</param>
+            <returns>Dynamic value of registry object, null if nonexistent</returns>
+        </member>
+        <member name="M:MellowCore.Windows.Registry.SetRegistryValue(System.String,System.Object)">
+            <summary>
+            Set registry value from application registry key
+            </summary>
+            <param name="KeyName">Key name as string to set</param>
+            <param name="KeyValue">Value to assign to key</param>
+            <returns>Dynamic value of registry object, null if unable to modify</returns>
+        </member>
+        <member name="M:MellowCore.Windows.Registry.DeleteRegistryValue(System.String)">
+            <summary>
+            Delete registry value from application registry key
+            </summary>
+            <param name="KeyName">Key name as string to delete</param>
+            <returns>True if successful, error if failed</returns>
+        </member>
+        <member name="T:MellowCore.Windows.WinInterface">
+            <summary>
+            Functions pertaining to the Windows operating system
+            </summary>
+        </member>
+        <member name="M:MellowCore.Windows.WinInterface.GetWindowsUserName">
+            <summary>
+            Fetches the username of the current user
+            </summary>
+            <returns>Windows Username as string</returns>
+        </member>
+        <member name="M:MellowCore.Windows.WinInterface.GetPCName">
+            <summary>
+            Fetches PC Name of machine
+            </summary>
+            <returns>PC Name as string</returns>
+        </member>
+    </members>
+</doc>
